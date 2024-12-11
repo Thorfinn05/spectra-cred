@@ -57,7 +57,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { SignInButton, SignUpButton } from '@clerk/nextjs'
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1a1f35] via-[#111827] to-[#0f172a]">
       {/* Navigation */}
