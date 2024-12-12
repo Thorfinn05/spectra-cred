@@ -1,18 +1,18 @@
-'use client'
-import { useParams } from 'next/navigation';
+'use client';
 
-interface Params {
-  userId: string;
-}
+import { useUser } from '@clerk/nextjs';
 
 const UserCredentials: React.FC = () => {
-  const params = useParams<Params>();
-  const userId = params.userId;
+  const { user } = useUser();
 
   return (
     <div>
       <h1>Credentials Page</h1>
-      <p>User ID: {userId}</p>
+      {user ? (
+        <p>User ID: {user.fullName}</p>
+      ) : (
+        <p>Loading user information...</p>
+      )}
     </div>
   );
 };
