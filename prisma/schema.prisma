@@ -1,0 +1,101 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        String    @id @default(dbgenerated()) // UUID from Clerk
+  fullName  String
+  email     String    @unique
+  createdAt DateTime  @default(now())
+  certificates Certificate[]
+
+  Leaderboard Leaderboard[]
+
+  Airdrop Airdrop[]
+
+  SocialMediaShare SocialMediaShare[]
+}
+
+model Certificate {
+  id             Int       @id @default(autoincrement())
+  userId         String
+  user           User      @relation(fields: [userId], references: [id])
+  title          String
+  issuer         String
+  issueDate      DateTime?
+  ipfsHash       String
+  blockchainHash String?
+  isVerified     Boolean   @default(false)
+  isFraudulent   Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+
+  Airdrop Airdrop[]
+
+  CertificateKeyword CertificateKeyword[]
+
+  SocialMediaShare SocialMediaShare[]
+}
+
+model FreeCertificate {
+  id             Int       @id @default(autoincrement())
+  title          String
+  institute      String
+  availableFrom  DateTime
+  availableUntil DateTime
+  ipfsHash       String
+}
+
+model Keyword {
+  id         Int    @id @default(autoincrement())
+  keyword    String
+  airdropValue Float
+
+  CertificateKeyword CertificateKeyword[]
+}
+
+model CertificateKeyword {
+  id             Int       @id @default(autoincrement())
+  certificateId  Int
+  keywordId      Int
+  certificate    Certificate @relation(fields: [certificateId], references: [id])
+  keyword        Keyword     @relation(fields: [keywordId], references: [id])
+}
+
+model Airdrop {
+  id             Int       @id @default(autoincrement())
+  certificateId  Int
+  userId         String
+  certificate    Certificate @relation(fields: [certificateId], references: [id])
+  user           User        @relation(fields: [userId], references: [id])
+  airdropAmount  Float
+  awardedAt      DateTime  @default(now())
+}
+
+model Leaderboard {
+  id      Int     @id @default(autoincrement())
+  userId  String
+  points  Float   @default(0)
+  user    User    @relation(fields: [userId], references: [id])
+}
+
+model SocialMediaShare {
+  id            Int       @id @default(autoincrement())
+  certificateId Int
+  userId        String
+  shareUrl      String
+  createdAt     DateTime  @default(now())
+  certificate   Certificate @relation(fields: [certificateId], references: [id])
+  user          User        @relation(fields: [userId], references: [id])
+}
