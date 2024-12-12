@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
@@ -28,7 +29,7 @@ export default function Dashboard() {
             <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
+            <Link href="/credentials/userId" className="text-white hover:text-cyan-400 transition-colors">
               Credentials
             </Link>
             <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
