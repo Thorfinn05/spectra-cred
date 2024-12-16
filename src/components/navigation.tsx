@@ -14,7 +14,7 @@ export default function Dashboard() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg"
+              src="/src3.jpg"
               alt="SpectraC Logo"
               width={40}
               height={40}
@@ -32,35 +32,24 @@ export default function Dashboard() {
             <Link href="/credentials/userId" className="text-white hover:text-cyan-400 transition-colors">
               Credentials
             </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
+            <Link href="/explore" className="text-white hover:text-cyan-400 transition-colors">
               Explore
             </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
-              Dashboard
+            <Link href="/organisation" className="text-white hover:text-cyan-400 transition-colors">
+              Organisation
             </Link>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-cyan-400 font-medium">$50.48</span>
-            <span className="hidden md:inline-flex items-center gap-2 text-white">
-              Spectra AI
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-            </span>
+
+
+            
+             <Link href="/pdf_analyse" className="text-white hover:text-cyan-400 transition-colors">
+            Spectra-AI
+            </Link>
+        
             <Image
-              src="/placeholder.svg"
+              src="/sc4.jpg"
               alt="Profile"
               width={40}
               height={40}
@@ -113,7 +102,7 @@ export default function Dashboard() {
               <div className="flex items-start justify-between">
                 <div className="flex gap-4">
                   <Image
-                    src="/placeholder.svg"
+                    src="/sc4.jpg"
                     alt="Credential Icon"
                     width={60}
                     height={60}
@@ -146,11 +135,11 @@ export default function Dashboard() {
 
           <div className="hidden lg:block">
             <Image
-              src="/placeholder.svg"
+              src="/home-top[1].png"
               alt="Dashboard Illustration"
               width={600}
               height={500}
-              className="w-full h-auto"
+              className="w-full h-auto bg-transparent"
             />
           </div>
         </div>
@@ -158,4 +147,3 @@ export default function Dashboard() {
     </div>
   )
 }
-

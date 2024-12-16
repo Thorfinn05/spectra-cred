@@ -152,7 +152,7 @@ export default function LandingPage() {
 
           <div className="relative w-full max-w-2xl mx-auto">
             <Image
-              src="/placeholder.svg"
+              src="/src3.jpg"
               alt="Security Illustration"
               width={800}
               height={600}
