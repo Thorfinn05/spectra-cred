@@ -104,3 +104,20 @@ export const mockDocuments = {
   ],
   certificates: mockCredentials
 };
+
+
+
+export const mockResults = {
+  organizations: ['Tech University', 'Ethereum Foundation', 'AWS'],
+  skills: ['React', 'Node.js', 'Solidity', 'Machine Learning'],
+  education: ['Bachelor\'s in Computer Science', 'Certified Blockchain Developer'],
+  jobTitles: ['Web Developer', 'Blockchain Developer', 'AI Engineer'],
+  skillPercentages: {
+    'React': 80,
+    'NodeJS': 75,
+    'Solidity': 90,
+    'Machine Learning': 60,
+  },
+  tokenReward: 150,
+};
+

@@ -53,74 +53,12 @@
 // }
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { SignInButton, SignUpButton } from '@clerk/nextjs'
+
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1a1f35] via-[#111827] to-[#0f172a]">
-      {/* Navigation */}
-      <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/placeholder.svg"
-              alt="SpectraC Logo"
-              width={40}
-              height={40}
-              className="w-10 h-10"
-            />
-            <span className="text-white text-2xl font-bold">
-              Spectra<span className="text-cyan-400">C</span>.
-            </span>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
-              Home
-            </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
-              Features
-            </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
-              Discover
-            </Link>
-            <Link href="#" className="text-white hover:text-cyan-400 transition-colors">
-              Team
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <span className="hidden md:inline-flex items-center gap-2 text-white">
-              Spectra AI
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-            </span>
-            <div className="flex gap-4 mb-12">
-       <SignUpButton mode="modal">
-           <Button size="lg">Get Started</Button>
-         </SignUpButton>
-         <SignInButton mode="modal">
-           <Button variant="outline" size="lg">Sign In</Button>
-         </SignInButton>
-       </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <main className="container mx-auto px-4 pt-20 pb-32 text-center">
         <div className="max-w-4xl mx-auto">
