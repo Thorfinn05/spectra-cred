@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
 // Replace with your Supabase project's URL and public anon key
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const SUPABASE_URL = `${process.env.NEXT_PUBLIC_SUPABASE_URL}`!;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 // TypeScript interface for the database schema

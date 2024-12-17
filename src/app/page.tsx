@@ -10,7 +10,9 @@ export default async function Page() {
   if (userId) {
     redirect("/dashboard");
   }
+  else{
 return(
-  <LandingPage/>
+  <h1>Hello</h1>
 )
+  }
 }
