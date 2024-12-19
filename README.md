@@ -121,7 +121,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Contact  
 
 For queries or support, reach out to:  
-- *Developer*: [kekubhai](https://github.com/kekubhai)  
+- *Developer*: [Anirban](https://github.com/kekubhai), [Aitijhya](https://github.com/AitijhyaCoded), [Rudranil](https://github.com/Thorfinn05)  
 - *Email*: your-email@example.com  
 
 ---
