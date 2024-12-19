@@ -1,11 +1,11 @@
 import React from 'react';
 
 const leaderboardData = [
-  { rank: 1, name: 'Alex Thompson', points: 3200, avatar: 'AT' },
-  { rank: 2, name: 'Sarah Chen', points: 3150, avatar: 'SC' },
-  { rank: 3, name: 'Mike Johnson', points: 3000, avatar: 'MJ' },
-  { rank: 4, name: 'Emma Davis', points: 2900, avatar: 'ED' },
-  { rank: 5, name: 'You', points: 2450, avatar: 'ME', isUser: true },
+  { rank: 1, name: 'Rudranil Das', points: 3, avatar: 'AT' },
+  { rank: 2, name: 'Aitijhya Roy', points: 2.5, avatar: 'SC' },
+  { rank: 3, name: 'Debopriya Debnath', points: 1.5, avatar: 'MJ' },
+  { rank: 4, name: 'Pranay De', points: 1, avatar: 'ED' },
+  { rank: 5, name: 'Anirban Ghosh', points: 0, avatar: 'ME', isUser: true },
 ];
 
 // Export the component as a React Functional Component

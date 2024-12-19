@@ -52,10 +52,10 @@ export default function Dashboard() {
               />
             </div>
 
-            <Link href="/wallet" className='bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg py-2 px-4 text-lg mt-8'>Connect wallet</Link>
+            <Link href="/wallet" className='bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg py- px-4 text-lg mt-8'>Connect wallet</Link>
 
             <button className="text-white p-2 rounded-full hover:bg-gray-800 transition-all duration-300 ease-in-out">
-              <Link href="https://www.chatbase.co/dashboard/akatsuki007/chatbots" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.chatbase.co/dashboard/spectra/chatbot/tMfEdJaEUKPOg9yhOhwq9" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/sc4.jpg"
                   alt="Profile"

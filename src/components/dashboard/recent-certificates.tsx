@@ -12,14 +12,14 @@ import {
       {
         id: 1,
         title: "Web Development Fundamentals",
-        issuer: "Tech Academy",
+        issuer: "Google Cloud",
         date: new Date("2024-03-15"),
         status: "verified",
       },
       {
         id: 2,
         title: "Blockchain Basics",
-        issuer: "Crypto Institute",
+        issuer: "Alchemy",
         date: new Date("2024-03-10"),
         status: "pending",
       },

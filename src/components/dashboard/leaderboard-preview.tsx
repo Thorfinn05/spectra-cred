@@ -9,18 +9,18 @@ import {
   export function LeaderboardPreview() {
     const topUsers = [
       {
-        name: "Alice Johnson",
-        points: 2500,
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-      },
-      {
-        name: "Bob Smith",
-        points: 2350,
+        name: "Rudranil Das",
+        points: 3,
         avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
       },
       {
-        name: "Carol Williams",
-        points: 2200,
+        name: "Aitijhya Roy",
+        points: 2.5,
+        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+      },
+      {
+        name: "Debopriya Debnath",
+        points: 1.5,
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
       },
     ]

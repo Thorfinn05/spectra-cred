@@ -11,25 +11,25 @@ import { Certificate } from "crypto"
     const stats = [
       {
         title: "Total Certificates",
-        value: "12",
+        value: "2",
         icon: Certificate,
         description: "Verified certificates in your portfolio",
       },
       {
         title: "Rewards Earned",
-        value: "150",
+        value: "2",
         icon: Gift,
         description: "Total airdrop tokens received",
       },
       {
         title: "Programs Completed",
-        value: "3",
+        value: "1",
         icon: Award,
         description: "Free certificate programs completed",
       },
       {
         title: "Leaderboard Rank",
-        value: "#28",
+        value: "#1",
         icon: Trophy,
         description: "Your current position",
       },

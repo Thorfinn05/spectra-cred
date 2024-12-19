@@ -22,7 +22,7 @@ interface ResultsDisplayProps {
   };
 }
 
-const page: React.FC = ({ results = mockResults }: ResultsDisplayProps) => {
+const page: React.FC<ResultsDisplayProps> = ({ results = mockResults }) => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isFileUploaded, setIsFileUploaded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
